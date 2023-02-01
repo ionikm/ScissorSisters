@@ -26,18 +26,18 @@
     <link rel="icon" type="image/png" href="./img/SS_logo_bg.png" />
   </head>
   <body>
-    <div class="hero ">
+    <div class="hero " id="home">
       <!-- Collored banner containing nav -- positioned absolute -->
 
       <div class="nav-banner">
         <!-- Content inside for narrow content -->
-        <div class="inner_nav-banner">
+        <div class="inner_nav-banner" >
           <nav>
             <a href="#index.html">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
             <a href="#prices">Prices</a>
-            <a href="#">Testimonials</a>
+            <a href="#testimonials">Testimonials</a>
             <a class="contact_link" href="#contact">Contact</a>
           </nav>
           <div class="social">
@@ -83,10 +83,15 @@
     <!-- About Section -->
     <section id="about" class="about-section">
       <div class="about-section-inner">
+
         <div class="about-section-image">
-          <!-- Image goes here -->
-          <img class="about_image" src="./img/about.webp" alt="about" />
+          <img class="about_image about_image1" src="./img/about.webp" alt="about" />
+          <img class="about_image about_image2" src="./img/about_2.webp" alt="about" />
+          <img class="about_image about_image3" src="./img/about_3.webp" alt="about" />
         </div>
+
+
+
         <div class="about-section-text">
           <h2 class="section-title">#about</h2>
           <p class="about-section-desc">
@@ -118,6 +123,7 @@
     <!-- Services -->
     <div class="outer-services">
       <section id="services"   class="services-section">
+       <div class="services-title-container">
         <h3 class="head_text">EXPERIENCE SCISSOR SISSTERS SERVICES</h3>
         <h2 class="section-description">Discover the beauty within</h2>
         <p class="services_desc">
@@ -125,9 +131,10 @@
           for the perfect transformation. From simple trims to bold new looks,
           we've got you covered.
         </p>
+       </div>
         <div class="services-card-container">
           <div class="services-card">
-            <img src="./img/haircut-photo.webp" alt="Haircut Service" />
+            <img  src="./img/haircut-photo.webp" alt="Haircut Service" />
             <h4 class="services-card-title">Haircut Services</h4>
             <p class="services-card-description">
               Our expert stylists will create the perfect haircut that suits
@@ -136,7 +143,7 @@
             <!-- <button class="services-card-button">Book Now</button> -->
           </div>
           <div class="services-card">
-            <img src="./img/coloring-photo.webp" alt="Coloring Service" />
+            <img  src="./img/coloring-photo.webp" alt="Coloring Service" />
             <h4 class="services-card-title">Coloring Services</h4>
             <p class="services-card-description">
               From subtle highlights to bold shades, our coloring services will
@@ -145,7 +152,7 @@
             <!-- <button class="services-card-button">Book Now</button> -->
           </div>
           <div class="services-card">
-            <img src="./img/styling-photo.webp" alt="Styling Service" />
+            <img  src="./img/styling-photo.webp" alt="Styling Service" />
             <h4 class="services-card-title">Styling Services</h4>
             <p class="services-card-description">
               Get ready for that special event or everyday glam with our
@@ -204,7 +211,7 @@
         </div>
       </section>
       <!-- Review -->
-<div class="review-container">
+<div class="review-container" id="testimonials">
   <div class="review-section">
     <div class="review-slider">
       <div class="review">
@@ -284,11 +291,28 @@
 
 </section>
 
-<footer>
+<div class="footer-wrap">
+  <footer class="footer-container">
+    <div class="footer-paragrahp">
+      <p>Copyright © 2023 ioNC</p>
+      <p>Created by ioNC</p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-square"></i></a>
+      <a href="#"><i class="fab fa-twitter-square"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+    <a class="back-top" href="#home">
+      <i class="fas fa-arrow-up"></i>
+      Back to Top
+    </a>
+  </footer>
+</div>
 
-</footer>
+
       
     </div>
+    <script src="./scripts/changeImg.js"></script>
     <script src="./scripts/scroll_down.js"></script>
     <script src="./scripts/carousel.js"></script>
   </body>
