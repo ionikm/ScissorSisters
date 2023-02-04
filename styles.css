@@ -42,6 +42,10 @@ h3 {
   position: relative;
 }
 
+.hero * {
+  border: 1px solid green;
+}
+
 .nav-banner {
   position: absolute;
   top: 120px;
@@ -194,24 +198,25 @@ nav a:hover {
 }
 
 /* Call-to-Action button styles */
+
 .hero-section .cta-button {
   display: inline-block;
-  padding: 15px 30px; /* Add padding to the button */
-  margin-top: 30px; /* Add margin to the top */
-  background-color: #de2990; /* Accent color */
-  color: #fdf7f7; /* Text color */
+  padding: 15px 30px;
+  margin-top: 30px;
+  background-color: #de2990;
+  color: #fdf7f7;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  border-radius: 25px; /* Round the corners */
-  transition: all 0.3s ease-in-out; /* Smooth transition on hover */
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
 }
 
 /* Call-to-Action button hover effect */
 .hero-section .cta-button:hover {
-  background-color: #fdf7f7; /* Change the background color on hover */
-  color: #de2990; /* Change the text color on hover */
-  cursor: pointer; /* Change the cursor to a pointer */
+  background-color: #fdf7f7;
+  /color: #de2990;
+  cursor: pointer;
 }
 
 .hero-section {
@@ -223,7 +228,7 @@ nav a:hover {
   position: absolute;
   bottom: 5rem;
   right: 50%;
-  transform: translateX(-50%);
+  transform: translateX(50%);
   border: none;
   background: transparent;
   font-size: 2rem;
