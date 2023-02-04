@@ -61,10 +61,10 @@ h3 {
 }
 
 .logo_img {
-  position: absolute; /* set the position to absolute */
+  position: absolute;
   top: 18px;
   left: 0px;
-  height: 80px; /* set the height to 80px */
+  height: 80px;
 }
 
 .contact {
@@ -163,6 +163,9 @@ nav a:hover {
   position: relative;
 }
 
+.close-nav {
+  display: none;
+}
 /* Title styles */
 .hero-section .title {
   font-size: 48px;
@@ -170,12 +173,24 @@ nav a:hover {
 }
 
 /* Motto styles */
+
 .hero-section .motto {
   font-size: 24px;
   font-style: italic;
   padding-top: 20px;
   font-family: montserat, sans-serif;
   color: var(--secondary-color);
+  text-shadow: 0px 0px 5px #de2990;
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Call-to-Action button styles */
@@ -241,7 +256,7 @@ nav a:hover {
 
 .about-section-text {
   padding: 0 48px;
-  height: 916px;
+  min-height: 916px;
   max-width: 560px;
   display: flex;
   flex-direction: column;
@@ -693,4 +708,184 @@ nav a:hover {
 
 /* 850px */
 @media only screen and (max-width: 850px) {
+  .logo_img {
+    top: 122px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  .contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* OFF CANVAS */
+
+  .nav-banner {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 65%;
+    height: 100%;
+
+    transition: all 0.5s ease;
+    background-color: #303030;
+    color: #e3cccc;
+  }
+
+  .nav-banner.active {
+    left: 0;
+  }
+
+  .social {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
+
+  .inner_nav-banner {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #e3cccc;
+    font-size: 32px;
+  }
+
+  .banner-mobile {
+    position: absolute;
+    width: 100%;
+    background-color: #303030;
+    top: 120px;
+    height: 85px;
+  }
+  .toggle-nav {
+    position: absolute;
+    top: 145px;
+    left: 20px;
+    width: 48px;
+    height: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .toggle-nav span {
+    width: 100%;
+    height: 2px;
+    background-color: #fefefe;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .close-nav {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 18px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .about-section-image {
+    display: none;
+  }
+
+  .about-section-inner {
+    padding: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-details {
+    position: inherit;
+    margin-top: -200px;
+  }
+  .contact_card {
+    grid-column: 1/-1;
+  }
+
+  .contact {
+    display: none;
+  }
+
+  .banner-mobile {
+    top: 0;
+  }
+
+  .logo_img {
+    top: 12px;
+    width: 50%;
+    height: auto;
+  }
+
+  .toggle-nav {
+    top: 26px;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .footer-container {
+    display: flex;
+  }
+  .outer-services {
+    height: auto;
+  }
+
+  .services-section * {
+    text-align: center;
+    padding: 16px;
+  }
+
+  .hero-section .title {
+    font-size: 32px;
+  }
+
+  .hero-section .motto {
+    font-size: 18px;
+    padding-bottom: 36px;
+  }
+
+  .services-prices * {
+    text-align: center;
+    padding: 16px;
+  }
+  .section-description {
+    width: 100%;
+  }
+
+  .services-table {
+    box-shadow: 2px 2px 6px #303030;
+  }
+
+  .call-now-button {
+    width: 100%;
+    padding: 7px 10px;
+  }
 }

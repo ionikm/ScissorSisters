@@ -26,60 +26,78 @@
     <link rel="icon" type="image/png" href="./img/SS_logo_bg.png" />
   </head>
   <body>
-    <div class="hero " id="home">
-      <!-- Collored banner containing nav -- positioned absolute -->
 
-      <div class="nav-banner">
-        <!-- Content inside for narrow content -->
-        <div class="inner_nav-banner" >
-          <nav>
-            <a href="#index.html">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#prices">Prices</a>
-            <a href="#testimonials">Testimonials</a>
-            <a class="contact_link" href="#contact">Contact</a>
-          </nav>
-          <div class="social">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-      <!-- Content inside hero that is not position absolute -->
-      <div class="inner_hero">
-        <img
-          class="logo_img"
-          src="./img/logo.png"
-          alt="logo scissors sissters"
-        />
 
-        <div class="contact">
-          <div class="book">
-            <h4 class="contact_title">Book your appointment</h4>
-            <h3 class="phone">01244 536688</h3>
-          </div>
-          <div class="address">
-            <h4 class="contact_title">Visit us anytime:</h4>
-            <h3>BROOKBANK THE HIGHWAY,</h3>
-            <h3>HAWARDEN, <span class="accent_color">CH5 3DN</span></h3>
-          </div>
-        </div>
-      </div>
 
-      <!-- HERO Content -->
-      <div class="hero-section">
-        <h1 class="title">
-          Transform Your Look with Scissors Sisters Hairdressing
-        </h1>
-        <p class="motto">Where Style Meets Expertise</p>
-        <a href="#contact" class="cta-button">Book Your Appointment Today</a>
-        <button class="scroll-down-button">
-          <i class="fas fa-chevron-down"></i>
-        </button>
+
+<div class="hero" id="home">
+  <!-- Collored banner containing nav -- positioned absolute -->
+  <button class="toggle-nav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+  <div class="banner-mobile"></div>
+  <div class="nav-banner">
+    <button class="close-nav">X</button>
+
+    <!-- Content inside for narrow content -->
+    <div class="inner_nav-banner">
+      <nav>
+        <!-- <a href="#hero">Home</a> -->
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#prices">Prices</a>
+        <a href="#testimonials">Testimonials</a>
+        <a class="contact_link" href="#contact">Contact</a>
+      </nav>
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
     </div>
+  </div>
+  <!-- Content inside hero that is not position absolute -->
+  <div class="inner_hero">
+    <img
+      class="logo_img"
+      src="./img/logo.png"
+      alt="logo scissors sissters"
+    />
+
+    <div class="contact">
+      <div class="book">
+        <h4 class="contact_title">Book your appointment</h4>
+        <h3 class="phone" >01244 536688</h3>
+      </div>
+      <div class="address">
+        <h4 class="contact_title">Visit us anytime:</h4>
+        <h3>BROOKBANK THE HIGHWAY,</h3>
+        <h3>HAWARDEN, <span class="accent_color">CH5 3DN</span></h3>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO Content -->
+  <div class="hero-section">
+    <h1 class="title">
+      Transform Your Look with Scissors Sisters Hairdressing
+    </h1>
+    <p class="motto">Where Style Meets Expertise</p>
+    <a href="#phone" class="cta-button">Book Your Appointment Today</a>
+    <button class="scroll-down-button">
+      <i class="fas fa-chevron-down"></i>
+    </button>
+  </div>
+</div>
+
+  
+  
+  
+  
+  
+  
     <!-- About Section -->
     <section id="about" class="about-section">
       <div class="about-section-inner">
@@ -167,7 +185,8 @@
      
       <section id="prices" class="services-prices">
         <div class="price-container">
-<div class="price-box1">          <h3 class="head_text">ARRANGE YOUR VISIT</h3>
+<div class="price-box1">          
+  <h3 class="head_text">ARRANGE YOUR VISIT</h3>
   <h2 class="section-description">BOOK NOW <br><span class="withjacqui">WITH JACQUI</span></h2>
   <p class="services_desc">At Scissor Sissters Hairdressing, we offer a wide range of services to meet your hair needs. Check out our prices below:</p>
   <table class="services-table">
@@ -201,7 +220,7 @@
     </tr>
   </table>
   <div class="call-now-container">
-    <a href="tel:1234567890" class="call-now-button">
+    <a href="tel:01244536688" class="call-now-button">
       Make an apointment <i class="fa fa-phone"></i>
     </a>
   </div>
@@ -278,7 +297,7 @@
   </div>
   <div class="contact_card">
     <i class="fa fa-phone"></i>
-    <div class="contact_card_title">BOOK BY PHONE</div>
+    <div class="contact_card_title" id="phone">BOOK BY PHONE</div>
     <div class="contact_card_content">01244 536688</div>
   </div>
   <div class="contact_card">
@@ -312,6 +331,8 @@
 
       
     </div>
+    <script src="./scripts/toggleNav.js"></script>
+    <script src="./scripts/close.js"></script>
     <script src="./scripts/changeImg.js"></script>
     <script src="./scripts/scroll_down.js"></script>
     <script src="./scripts/carousel.js"></script>
