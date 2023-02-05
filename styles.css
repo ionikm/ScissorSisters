@@ -35,7 +35,7 @@ h3 {
 
 .hero {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   min-height: 100vh;
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 2)),
     url(./img/1.webp);
@@ -56,7 +56,7 @@ h3 {
 }
 
 .inner_hero {
-  position: relative; /* set the position to relative */
+  position: relative;
   margin: 0 auto;
   max-width: 1280px;
 }
@@ -218,6 +218,7 @@ nav a:hover {
 .hero-section {
   position: relative;
   height: 100vh;
+  min-height: 650px;
 }
 
 .scroll-down-button {
