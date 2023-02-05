@@ -722,6 +722,11 @@ nav a:hover {
     justify-content: center;
   }
 
+  .hero-section .title {
+    font-size: 36px;
+    padding-top: 24px;
+  }
+
   /* OFF CANVAS */
 
   .nav-banner {
