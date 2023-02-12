@@ -566,6 +566,7 @@ nav a:hover {
   left: 50%;
   transform: translate(-50%, 0);
   padding: 0 32px;
+  box-shadow: 4px 3px 5px #333;
 }
 
 .contact_title_card_subtitle {
@@ -580,6 +581,7 @@ nav a:hover {
 
 .contact_title_card_content {
   max-width: 350px;
+  color: #e3cccc;
 }
 
 .contact_card_title {
@@ -590,6 +592,7 @@ nav a:hover {
 .contact_card_content {
   font-weight: 300;
   font-family: montserat, sans-serif;
+  color: #e3cccc;
 }
 
 .contact_card {
@@ -609,6 +612,29 @@ nav a:hover {
 
 /* Footer styles */
 
+footer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.add {
+  text-align: center;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: #999999;
+  padding: 20px 0;
+}
+
+.add a {
+  color: #de2990;
+  text-decoration: none;
+  transition: ease-in-out 0.2s;
+}
+
+.add a:hover {
+  color: #e3cccc;
+}
+
 .footer-wrap {
   width: 100%;
   background-color: #303030;
@@ -621,6 +647,10 @@ nav a:hover {
   align-items: center;
   max-width: 1280px;
   margin: 0 auto;
+}
+
+.logo-footer {
+  max-height: 70px;
 }
 
 .footer-paragrahp {
