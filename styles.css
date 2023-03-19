@@ -63,9 +63,9 @@ h3 {
 
 .logo_img {
   position: absolute;
-  top: 18px;
-  left: 0px;
-  height: 80px;
+  top: 0;
+  left: 50px;
+  height: 100px;
 }
 
 .contact {
@@ -384,7 +384,7 @@ nav a:hover {
 /* SECTION PRICES */
 .services-prices {
   max-width: 1280px;
-  min-height: 800px;
+  min-height: 1100px;
   margin: 0 auto;
   margin-top: 128px;
   display: flex;
@@ -418,6 +418,13 @@ nav a:hover {
   border: 1px solid #ddd;
   padding: 8px;
   text-align: right;
+}
+
+.price-table-header{
+  text-transform: uppercase;
+  padding: 16px 0 8px 0;
+  font-family: system-ui, sans-serif;
+  text-shadow: 2px 0 0 6px;
 }
 
 .call-now-container {
@@ -617,6 +624,7 @@ footer {
   margin: 0 auto;
 }
 
+
 .add {
   text-align: center;
   font-size: 14px;
@@ -650,7 +658,7 @@ footer {
 }
 
 .logo-footer {
-  max-height: 70px;
+  max-height: 170px;
 }
 
 .footer-paragrahp {
@@ -741,10 +749,11 @@ footer {
 /* 850px */
 @media only screen and (max-width: 850px) {
   .logo_img {
-    top: 122px;
+    top:120px;
     left: 0;
     right: 0;
     margin: 0 auto;
+
   }
   .contact {
     width: 100%;
@@ -875,7 +884,7 @@ footer {
   }
 
   .logo_img {
-    top: 12px;
+    top: 88px;
     width: 50%;
     height: auto;
   }
