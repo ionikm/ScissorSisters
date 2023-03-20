@@ -63,9 +63,11 @@ h3 {
 
 .logo_img {
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 50px;
   height: 100px;
+  background-color: #ddd;
+  padding:10px;
 }
 
 .contact {
@@ -659,6 +661,10 @@ footer {
 
 .logo-footer {
   max-height: 170px;
+  background-color:#ddd;
+  padding:10px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 20px #999;
 }
 
 .footer-paragrahp {
@@ -749,7 +755,7 @@ footer {
 /* 850px */
 @media only screen and (max-width: 850px) {
   .logo_img {
-    top:120px;
+    top:112px;
     left: 0;
     right: 0;
     margin: 0 auto;
@@ -884,9 +890,10 @@ footer {
   }
 
   .logo_img {
-    top: 88px;
-    width: 50%;
+    top: 0;
+    width:82px;
     height: auto;
+
   }
 
   .toggle-nav {
