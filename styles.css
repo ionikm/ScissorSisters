@@ -260,7 +260,7 @@ nav a:hover {
 
 .about-section-text {
   padding: 0 48px;
-  min-height: 916px;
+  min-height: 600px;
   max-width: 560px;
   display: flex;
   flex-direction: column;
