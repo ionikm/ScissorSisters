@@ -737,7 +737,9 @@ footer {
   }
 
   .services-card img {
-    display: none;
+    width:50%;
+    margin-top:24px;
+    border-radius: 25px;
   }
 
   .services-title-container {
@@ -940,5 +942,10 @@ footer {
   .call-now-button {
     width: 100%;
     padding: 7px 10px;
+  }
+
+  .services-card img {
+    width:90%;
+
   }
 }
